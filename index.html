@@ -39,6 +39,34 @@
             background: linear-gradient(to right, #d650eb, #ff9472); 
           }
 
+        .event .insights{
+            text-align: center;
+            margin-top: 75px;
+        }
+        .event .insights h2{
+            font-size: 28px;
+            text-transform: uppercase;
+            position: relative; 
+            display: inline-block;
+            background: linear-gradient(to right, #6a26ad, #1d143a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+         }
+         .event .insights h2::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, #d650eb, #ff9472); 
+          }
+
+
+        
+
+        
         .banner {
             display: flex;
             justify-content: center;
@@ -312,6 +340,10 @@
               </ul>
             
         </div>
+
+         <div class="Event insights">
+            <h2>About Event</h2> 
+          </div>
         <div>
             <ul class="bullets">
                 <li><b>About Event</b> Join our workshop led by a seasoned professional in demand forecasting and inventory management.
