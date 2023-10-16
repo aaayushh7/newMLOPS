@@ -246,11 +246,15 @@ html {
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .navbar {
-        bottom: 0;
-        width: 100vw;
-        height: 5rem;
         position: fixed;
+        bottom: 0;
+        left: 0;  
+        width: 100%;
+       
     }
+    body {
+        padding-bottom: 5rem; 
+      }
 
     .content h2 {
         color: #fff;
@@ -267,6 +271,12 @@ html {
     .navbar-nav {
         flex-direction: row;
     }
+    .navbar::-webkit-scrollbar {
+        display: none;
+      }
+      html::-webkit-scrollbar{
+        display: none;
+      }
 
     .nav-link {
         justify-content: center;
