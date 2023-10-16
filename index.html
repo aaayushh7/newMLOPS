@@ -13,6 +13,32 @@
     <style>
         /* Default Styles */
 
+        .meet-guest {
+            text-align: center; 
+            margin-top: 75px;
+          }
+          
+          .meet-guest h2 {
+            font-size: 28px;
+            text-transform: uppercase;
+            position: relative; 
+            display: inline-block;
+            background: linear-gradient(to right, #a975dd, #6449c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+          }
+          
+          .meet-guest h2::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, #d650eb, #ff9472); 
+          }
+
         .banner {
             display: flex;
             justify-content: center;
@@ -34,7 +60,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
-            margin-top: 30px;
+            margin-top: 3px;
             margin-left: 120px;
             padding-bottom: 99px;
         }
@@ -72,7 +98,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 80px;
+                margin-top: 20px;
                 margin-left: 0px;
                 flex-direction: column;
             }
@@ -81,7 +107,7 @@
                 margin-left: 30px;
                 width: 250px;
                 height: 250px;
-                margin-top: 30px;
+                margin-top: 0px;
                 border: 10px solid;
   border-image: linear-gradient(to right, pink, orange, purple);
   border-image-slice: 1;
@@ -265,6 +291,10 @@
     <div class="banner">
         <img src="./images/1.jpeg">
     </div>
+
+    <div class="meet-guest">
+        <h2>Meet our Guest</h2> 
+      </div>
 
     <div class="grid-2">
 
