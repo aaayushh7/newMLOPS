@@ -17,6 +17,8 @@ body {
     background-size: cover;
     -webkit-animation: slidein 25s;
     animation: slidein 25s;
+    background-attachment: fixed;
+  background-position: center; 
 
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -60,26 +62,11 @@ html {
 
 
 .content {
-    position: relative;
+    position: fixed;
+    z-index: -1;
   }
   
-  .content h2 {
-    color: #fff;
-    font-size: 5em;
-    margin-left: 270px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  .content h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 2px #0d0d105b;
-  }
-  
-  .content h2:nth-child(2) {
-    color: #3a2ec3;
-    animation: animate 4s ease-in-out infinite;
-  }
+
   
   @keyframes animate {
     0%,
