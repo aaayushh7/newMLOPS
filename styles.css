@@ -137,6 +137,7 @@ html {
 
 .navbar {
     position: fixed;
+    bottom: 0;
     /* background-color: var(--bg-primary); */
     transition: width 600ms ease;
     overflow: scroll;

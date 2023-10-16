@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,118 @@
     <link rel="stylesheet" href="styles.css">
     <!-- <script src="script.js"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Default Styles */
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 600px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .banner img {
+            width: 450px;
+            height: 600px;
+            margin-top: 220px;
+            border-radius: 10px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            margin-top: 30px;
+            margin-left: 120px;
+            padding-bottom: 99px;
+        }
+
+        .grid-2 img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-top: 100px;
+            border: 10px solid transparent;
+            background: 
+              linear-gradient(pink, orange, purple) 
+              padding-box, 
+              linear-gradient(to right, pink, orange, purple)
+              border-box;
+            background-origin: border-box;
+            background-clip: content-box, border-box; 
+        }
+
+        /* Smartphone Styles */
+
+        @media only screen and (max-width: 600px) {
+
+            .banner {
+                height: 400px;
+            }
+
+            .banner img {
+                width: 300px;
+                height: 400px;
+                margin-top: 200px;
+            }
+
+            .grid-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 80px;
+                margin-left: 0px;
+                flex-direction: column;
+            }
+
+            .grid-2 img {
+                margin-left: 30px;
+                width: 250px;
+                height: 250px;
+                margin-top: 30px;
+                border: 10px solid;
+  border-image: linear-gradient(to right, pink, orange, purple);
+  border-image-slice: 1;
+
+            }
+
+        }
+        .bullets {
+            list-style: none; 
+            margin-left: 0;
+          }
+          
+          .bullets li {
+            position: relative;
+            padding-left: 20px; 
+            font-size: 19px;
+            font-family: sans-serif;
+            color: aliceblue;
+            
+          }
+          
+          .bullets li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            
+            background: linear-gradient(to right, purple, pink);
+          }
+    </style>
 </head>
+
 <body>
-    
-    <div class="center">
-       <nav class="navbar">
+
+    <div class="center"></div>
+    <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
                 <a href="#" class="nav-link">
@@ -146,14 +254,37 @@
     </nav>
     <section>
         <div class="content">
-          <h2>AICloud</h2>
-          <h2>AICloud</h2>
+            <h2>AICloud</h2>
+            <h2>AICloud</h2>
         </div>
-      </section>
-      
-      <!-- starting the code here -->
+    </section>
 
-</div>
+    <!-- starting the code here -->
+    <div class="banner">
+        <img src="./images/1.jpeg">
+    </div>
+
+    <div class="grid-2">
+
+        <div>
+            <img src="./images/123.jpeg">
+        </div>
+
+        <div>
+            
+            <ul class="bullets">
+                <li><b>Meet Our Expert:</b> Join our workshop led by a seasoned professional in demand forecasting and inventory management.
+                </li>
+                <li><b>Proven Success:</b>Learn from someone who achieved remarkable results, boosting SKU sell-through and reducing stockouts.</li>
+                <li><b>Bridging Techniques:</b>Gain insights into blending traditional and modern FMCG strategies for success.</li>
+              </ul>
+        </div>
+
+    </div>
+
+
+    <!-- </div> -->
 
 </body>
+
 </html>
