@@ -257,11 +257,11 @@ html {
         left: 0;
         width: 100%;
 
-
     }
 
     body {
         padding-bottom: 5rem;
+        width: 100%;
     }
 
     .content h2 {
